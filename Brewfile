@@ -1,6 +1,7 @@
 tap "homebrew/cask"
 tap "homebrew/core"
 tap "homebrew/services"
+tap "homebrew/cask-fonts"
 cask_args appdir: "/Applications"
 
 brew "nvm"
@@ -16,3 +17,4 @@ cask "hyper"
 cask "spotify"
 cask "alfred"
 cask "dash"
+cask "font-fira-code"
