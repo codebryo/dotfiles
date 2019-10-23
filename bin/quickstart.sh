@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/zsh
 #/ Usage: bin/quickstart.sh
 #/ Quickstart my macbook
 
