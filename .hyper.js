@@ -81,11 +81,7 @@ module.exports = {
   //   `hyperpower`
   //   `@company/project`
   //   `project#1.0.1`
-  plugins: [
-    "hyperterm-1password",
-    "hyperterm-paste",
-    "hyperlinks",
-  ],
+  plugins: ["hyperterm-1password", "hyperterm-paste", "hyperlinks", "hyper-night-owl"],
 
   // in development, you can create a directory under
   // `~/.hyper_plugins/local/` and include it here

@@ -25,12 +25,17 @@ fi
 # Run brew bundle
 brew bundle --file ./Brewfile
 
+#==================
 # Install zsh
+#==================
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 sudo_askpass chsh -s $(which zsh)
+# Add the pi theme
+wget -O $ZSH_CUSTOM/themes/pi.zsh-theme https://raw.githubusercontent.com/tobyjamesthomas/pi/master/pi.zsh-theme
 
-# Run specific dot file installations
-#
+#==================
+# Dotfiles Specifics
+#==================
 # Move general dotfiles to their right home in user
 files=( .zshrc .hyper.js )
 for i in "${files[@]}"
