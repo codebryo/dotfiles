@@ -6,6 +6,7 @@ cask_args appdir: "/Applications"
 
 brew "nvm"
 brew "git"
+brew "yarn"
 
 # Apps
 cask "visual-studio-code"
