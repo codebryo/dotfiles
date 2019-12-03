@@ -26,14 +26,6 @@ fi
 brew bundle --file ./Brewfile
 
 #==================
-# Install zsh
-#==================
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-sudo_askpass chsh -s $(which zsh)
-# Add the pi theme
-wget -O $ZSH_CUSTOM/themes/pi.zsh-theme https://raw.githubusercontent.com/tobyjamesthomas/pi/master/pi.zsh-theme
-
-#==================
 # Dotfiles Specifics
 #==================
 # Move general dotfiles to their right home in user
@@ -51,3 +43,12 @@ do
 done
 echo "Moving VScode settings"
 cp  vscode/settings.json $HOME/Library/Application\ Support/Code/User/settings.json
+
+#==================
+# Install zsh
+# -- Needs to be the final step as it prevents the script from running further
+#==================
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+sudo_askpass chsh -s $(which zsh)
+# Add the pi theme
+wget -O $ZSH_CUSTOM/themes/pi.zsh-theme https://raw.githubusercontent.com/tobyjamesthomas/pi/master/pi.zsh-theme
