@@ -10,13 +10,20 @@ brew "yarn"
 brew "wget"
 
 # Apps
-cask "visual-studio-code"
+# -- Security
 cask "1password"
 cask "1password-cli"
+# -- Browsers
 cask "firefox"
 cask "google-chrome"
+# -- Work
+cask "visual-studio-code"
 cask "hyper"
-cask "spotify"
 cask "alfred"
 cask "dash"
 cask "font-fira-code"
+cask "notion"
+cask "slack"
+# -- Other
+cask "spotify"
+cask "telegram"
