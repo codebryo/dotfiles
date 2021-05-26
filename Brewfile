@@ -1,29 +1,46 @@
+tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/core"
 tap "homebrew/services"
 tap "homebrew/cask-fonts"
 cask_args appdir: "/Applications"
 
-brew "nvm"
+# Libs
+brew "wget"
+brew "zlib"
+
+# Tools
+brew "asdf"
 brew "git"
 brew "yarn"
-brew "wget"
+brew "http-server"
+brew "sqlite"
+brew "redis"
+brew "postgres"
+
+# Languages
+brew "deno"
+brew "go"
 
 # Apps
 # -- Security
 cask "1password"
 cask "1password-cli"
 # -- Browsers
-cask "firefox"
-cask "google-chrome"
+cask "brave-browser"
 # -- Work
 cask "visual-studio-code"
 cask "hyper"
 cask "alfred"
-cask "dash"
+cask "figma"
+cask "dash@5"
 cask "font-fira-code"
 cask "notion"
 cask "slack"
+cask "skyfonts"
 # -- Other
 cask "spotify"
 cask "telegram"
+cask "signal"
+cask "webtorrent"
+cask "discord"

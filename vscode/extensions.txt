@@ -20,10 +20,7 @@ ms-vsliveshare.vsliveshare
 octref.vetur
 PKief.material-icon-theme
 pnp.polacode
-RobbOwen.synthwave-vscode
 robinbentley.sass-indented
 sdras.night-owl
 sdras.vue-vscode-snippets
-sianglim.slim
-WallabyJs.quokka-vscode
 xabikos.JavaScriptSnippets
